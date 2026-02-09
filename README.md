@@ -78,7 +78,6 @@ python -m transcribe-audio.transcribe \
   -f all \
   --diarize \
   --hf_token "$HF_TOKEN" \
-  --verbose true \
   --save-subtitled-video
 ```
 
@@ -311,7 +310,6 @@ res = transcribe(
     save_subtitled_video="__AUTO__",
     diarize=True,
     hf_token=os.environ.get("HF_TOKEN"),
-    verbose=True,
 )
 
 print(res["outputs"])
@@ -371,6 +369,11 @@ uv run python -m transcribe-audio.transcribe \
   -f all \
   --diarize \
   --hf_token "$HF_TOKEN" \
-  --verbose true \
   --save-subtitled-video
 ```
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.

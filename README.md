@@ -38,21 +38,21 @@ pip install transcribe-audio
 ### Global help
 
 ```bash
-python -m transcribe-audio.transcribe -h
+python -m transcribe_audio.transcribe -h
 # or
-python -m transcribe-audio.transcribe --help
+python -m transcribe_audio.transcribe --help
 ```
 
 ### List supported backends
 
 ```bash
-python -c "from transcribe-audio.backends import available_backends; print('\\n'.join(available_backends()))"
+python -c "from transcribe_audio.backends import available_backends; print('\\n'.join(available_backends()))"
 ```
 
 ### Basic transcription (ALL formats + subtitled video)
 
 ```bash
-python -m transcribe-audio.transcribe \
+python -m transcribe_audio.transcribe \
   -i in.wav \
   --backend whisperx \
   --model small \
@@ -66,7 +66,7 @@ python -m transcribe-audio.transcribe \
 ### Transcription + diarization (ALL formats + subtitled video)
 
 ```bash
-python -m transcribe-audio.transcribe \
+python -m transcribe_audio.transcribe \
   -i in.wav \
   --backend whisperx \
   --model small \
@@ -270,13 +270,13 @@ Fallback / thresholds:
 After install:
 
 ```bash
-python -c "from transcribe-audio import transcribe; print(transcribe)"
+python -c "from transcribe_audio import transcribe; print(transcribe)"
 ```
 
 ### Simple transcription from Python
 
 ```python
-from transcribe-audio import transcribe
+from transcribe_audio import transcribe
 
 res = transcribe(
     inputs="in.wav",
@@ -295,7 +295,7 @@ print("JSON:", res["outputs"]["json"])
 ### Transcription + diarization from Python
 
 ```python
-from transcribe-audio import transcribe
+from transcribe_audio import transcribe
 import os
 
 res = transcribe(
@@ -337,13 +337,13 @@ uv sync
 CLI help (uv environment):
 
 ```bash
-uv run python -m transcribe-audio.transcribe -h
+uv run python -m transcribe_audio.transcribe -h
 ```
 
 Basic transcription (uv):
 
 ```bash
-uv run python -m transcribe-audio.transcribe \
+uv run python -m transcribe_audio.transcribe \
   -i in.wav \
   --backend whisperx \
   --model small \
@@ -357,7 +357,7 @@ uv run python -m transcribe-audio.transcribe \
 Transcription + diarization (uv):
 
 ```bash
-uv run python -m transcribe-audio.transcribe \
+uv run python -m transcribe_audio.transcribe \
   -i in.wav \
   --backend whisperx \
   --model small \

@@ -31,8 +31,6 @@ Install examples:
 pip install transcribe-audio
 ```
 
-> If you haven’t published to PyPI yet, replace `transcribe-audio` above with your final package name.
-
 ---
 
 ## CLI usage

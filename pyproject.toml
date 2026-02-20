@@ -1,6 +1,6 @@
 [project]
 name = "transcribe-audio"
-version = "0.1.6"
+version = "0.1.7"
 description = "A CLI + Python package for automatic speech recognition (ASR) on audio or video using pluggable backends (currently WhisperX)."
 readme = "README.md"
 authors = [

@@ -1,4 +1,5 @@
 # transcribe-audio
+**Python:** `>=3.10, <3.13`
 
 A CLI + Python package for automatic speech recognition (ASR) on **audio or video** using pluggable backends (currently **WhisperX**).
 

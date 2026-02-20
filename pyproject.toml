@@ -1,13 +1,13 @@
 [project]
 name = "transcribe-audio"
-version = "0.1.5"
+version = "0.1.6"
 description = "A CLI + Python package for automatic speech recognition (ASR) on audio or video using pluggable backends (currently WhisperX)."
 readme = "README.md"
 authors = [
     { name = "Surya Chand Rayala", email = "suryachand2k1@gmail.com" }
 ]
 license = { file = "LICENSE" }
-requires-python = ">=3.10"
+requires-python = ">=3.10, <3.13"
 dependencies = [
     "huggingface-hub<1.0",
     "onnxruntime<1.24",
